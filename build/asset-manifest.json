@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1f56565c.css",
+    "main.js": "/static/js/main.665690a7.js",
+    "static/media/book-back1.jpg": "/static/media/book-back1.02337ad7926767f319ec.jpg",
+    "static/media/Coco-Gothic-Light-trial.ttf": "/static/media/Coco-Gothic-Light-trial.1e754564ff21c4426d82.ttf",
+    "static/media/Coco-Gothic-Regular-trial.ttf": "/static/media/Coco-Gothic-Regular-trial.3112050b5b25c5a5b2d7.ttf",
+    "static/media/banner-img.jpg": "/static/media/banner-img.3206072aa45e1f46ae78.jpg",
+    "static/media/customer-banner.jpg": "/static/media/customer-banner.17e5d8419084a9240f22.jpg",
+    "static/media/froyo.otf": "/static/media/froyo.8483aed846799c755123.otf",
+    "static/media/services.otf": "/static/media/services.51354c8233f09bb001c7.otf",
+    "static/media/banner.ttf": "/static/media/banner.a72cf76fc84fa2c57dac.ttf",
+    "static/media/cus2.jpg": "/static/media/cus2.6fa4ea4506f0f053c5c7.jpg",
+    "static/media/fg3.png": "/static/media/fg3.33fe2f0c020e149afd0e.png",
+    "static/media/cus1.jpg": "/static/media/cus1.a9df4faadf8cde71c3c5.jpg",
+    "static/media/banner-con.TTF": "/static/media/banner-con.7d521baec2350e17620c.TTF",
+    "static/media/Metropolis-Light.otf": "/static/media/Metropolis-Light.5813789eac597edf6ef4.otf",
+    "static/media/Metropolis-Regular.otf": "/static/media/Metropolis-Regular.67a1988d7b65b0aaa16d.otf",
+    "index.html": "/index.html",
+    "main.1f56565c.css.map": "/static/css/main.1f56565c.css.map",
+    "main.665690a7.js.map": "/static/js/main.665690a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f56565c.css",
+    "static/js/main.665690a7.js"
+  ]
+}
