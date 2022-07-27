@@ -15,7 +15,7 @@ router.post("/adminlogin", async (req, res) => {
       .createHash("sha256")
       .update(JSON.stringify(data))
       .digest("base64");
-    console.log(hash.toString());
+    // console.log(hash.toString());
     if (admins.rowCount == 0) {
       return res.status(404).send({ message: "Admin not found" });
     } else {
@@ -31,8 +31,7 @@ router.post("/adminlogin", async (req, res) => {
 
 router.get("/admin/getreservations", async (req, res) => {
   try {
-    const reservation = await pool.query("SELECT * FROM reservation");
-    console.log("hello");
+    const reservation = await pool.query("SELECT * FROM reservation_history");
     if (reservation.rowCount == 0) {
       res.status(404).json({ message: "No Reservations" });
     } else {
@@ -77,7 +76,7 @@ router.get("/admin/getrooms", async (req, res) => {
 router.put("/admin/updateroom", async (req, res) => {
   try {
     const { roomno } = req.body;
-    console.log(roomno);
+    // console.log(roomno);
     const updateroom = await pool.query(
       "update rooms set isavailable = 't' where room_no = $1",
       [roomno]
