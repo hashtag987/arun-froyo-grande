@@ -17,21 +17,21 @@ const validateOldUser = (data) => {
     data.children != ""
   );
 };
-router.get("/available", async (req, res) => {
-  try {
-    const rooms = await pool.query(
-      "SELECT c.class_id,class_name, count(*), class_price FROM rooms r inner join classes c on c.class_id = r.class_id WHERE r.isavailable = '1' GROUP BY c.class_id ORDER BY c.class_id"
-    );
-    if (rooms.rowCount == 0) {
-      res.status(404).json({ message: "Rooms not Available" });
-    } else {
-      res.status(200).json(rooms.rows);
-    }
-  } catch (err) {
-    //console.log(err.message);
-    res.status(500).send({ message: "Internal Server Error" });
-  }
-});
+// router.get("/available", async (req, res) => {
+//   try {
+//     const rooms = await pool.query(
+//       "SELECT c.class_id,class_name, count(*), class_price FROM rooms r inner join classes c on c.class_id = r.class_id WHERE r.isavailable = '1' GROUP BY c.class_id ORDER BY c.class_id"
+//     );
+//     if (rooms.rowCount == 0) {
+//       res.status(404).json({ message: "Rooms not Available" });
+//     } else {
+//       res.status(200).json(rooms.rows);
+//     }
+//   } catch (err) {
+//     //console.log(err.message);
+//     res.status(500).send({ message: "Internal Server Error" });
+//   }
+// });
 
 
 
